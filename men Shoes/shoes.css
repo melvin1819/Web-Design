@@ -1,0 +1,350 @@
+html{
+  background-image: url('../images/backgroud.jpg');
+  }
+  
+  body{
+    color:black;
+    background-color: #f9f9f9;
+    font-family: Vendara,Geneva,sans-serif;
+    margin: auto;
+    width: 100%;
+    max-width: 1030px;
+    min-width: 650;
+  }
+
+  /* header */
+  body>header{
+    text-align: center;
+    margin:0;
+    padding:6px;
+    width:99%;
+    overflow:hidden;
+  }
+  
+  body>footer{
+    width: 100%;
+    clear:both;
+  }
+  nav li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    
+  }
+  
+  nav li a{
+    display: block;
+    padding: 16px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: middle;
+    overflow: hidden;
+    background-color:rgb(3, 3, 3);
+    
+
+}
+  
+.cart ion-icon{
+    vertical-align: bottom;
+    font-size:25px;
+    padding-right: 5px;
+ }
+  
+.cart a{
+   color: #1013f3;
+   cursor: pointer;
+}
+  
+ nav li span{
+  padding-left: 5px;
+  color:rgb(143, 0, 24);
+}
+  
+.add-cart{
+   width: 100%;
+  color: rgb(203, 207, 216);
+  text-align: center;
+  padding: 1em;
+  background-color: rgb(3, 0, 7);
+  font-size: 13px;
+  
+ }
+ .add:hover .add-cart{
+   padding:2em;
+ }
+/* image */
+.image{
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4,
+.image:hover .cart5,
+.image:hover .cart6,
+.image:hover .cart7,
+.image:hover .cart8,
+.image:hover .cart9{
+  bottom: 115px;
+  opacity:1;
+  padding:10px;
+  text-decoration: none;
+
+}
+
+
+  /* center */
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+  /* container */
+.container{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+  
+  /* menshoes */
+  div.gallery {
+    margin: 10px;
+    border: 3px solid #ccc;
+    float: left;   
+    margin: 40px 70px;
+    background-color: rgb(203, 207, 216);
+  }
+  
+  div.gallery:hover {
+    border: 3px solid #777;
+  }
+  
+  .container-category{
+    display:flex;
+    justify-content: center;
+    
+    margin-top: 50px;
+    padding-bottom: 100px;
+  }
+  div.desc {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  /* footer */
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+  }
+
+/* Word */
+ p {
+  text-align: center;
+}
+ h1{
+  color:black;
+}
+
+
+/* categories */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: rgb(58, 57, 57);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*...................cart page....................*/
+.products-container{
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top:150px;
+}
+
+.product-header{
+  width: 100%;
+  max-width: 650px;
+  display:flex;
+  justify-content: flex-start;
+  border-bottom: 2px solid lightgrey;
+  margin: 0 auto;
+  border: 2px solid rgb(130, 105, 252);
+  padding: 10px;
+  border-bottom-left-radius: 25px;
+}
+
+.product-title{
+  width: 45%;
+}
+
+.price{
+  width: 15%;
+ 
+  display: flex;
+  align-items: center;
+}
+.quantity{
+  width: 30%;
+  
+  display: flex;
+  align-items: center;
+}
+.total{
+  width: 10%;
+  
+  display: flex;
+  align-items: center;
+}
+
+.product{
+  width:45%;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  padding:10px 0;
+ 
+}
+
+.products-container ion-icon{
+  font-size:25px;
+  color:blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+.products{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  border: 2px solid red;
+  padding: 10px;
+  border-bottom-left-radius: 25px;
+  border-bottom: 2px solid rgb(12, 13, 15);
+}
+
+.products img{
+  width:75px
+}
+
+.basketTotalContainer{
+  display:flex;
+  justify-content:flex-end;
+  width: 100%;
+  padding:10px 0;
+}
+
+.basketTotalTitle{
+  width:30%;
+}
+
+.basketTotal{
+  width:10%;
+}
+
+
+ /* Dropdown Button */
+ .dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: grey;
+}
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchBar.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropddropdownSearchBarown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdownSearchBar-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdownSearchBar-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownSearchBar-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

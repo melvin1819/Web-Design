@@ -1,0 +1,146 @@
+html{
+    background-color: rgb(155, 153, 153);
+    }
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    position : relative;
+    top : 0;
+    margin: 0 0 1px;
+    width : 100%;
+    height: 2200px;
+    overflow :hidden;
+}
+.title{
+    padding: 0 0 1px;
+    position : relative;
+    left : 540;
+    top : -120;
+    font-weight : 550;
+    font-size : 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.bigcol{
+    width : 100%;
+    float : left;
+    height : 100% auto;
+}
+.leftcol{
+    width : 50%;
+    float : left;
+    height : 90%;
+}
+.row1{
+    float : left;
+}
+.col1{
+    float : left;
+    text-align : left;
+}
+img.alpha{
+    position : relative;
+    top : 10;
+    left : 150;
+    width:80%;
+    height : 25%;
+}
+.rect{
+    position : relative;
+    top : 170;
+    left : 165;
+    height : 320px;
+    width : 540px;
+    border : 1px solid black;
+    background-color : rgb(129, 64, 64);
+    transition-duration:0.3s;
+    opacity : 1;
+    z-index :2;
+}
+.rect:hover{
+    opacity : 0.85;
+}
+.righttri {
+	width: 0;
+    height: 0;
+    margin : 110 0 0 525px;
+    border-top: 45px solid transparent;
+	border-left: 50px solid rgb(129, 64, 64);
+	border-bottom: 45px solid transparent;
+}
+.texttitle{
+    float : left;
+    position : relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin : 50 60 20 60px;
+    
+}
+.text{
+    float : left;
+    font-family: 'Times New Roman', Times, serif;
+    margin : 0 60 0 60px;
+    font-size : 18px;
+    
+}
+
+.videotitle{
+    position : relative;
+    top : 370;
+    left : 140;
+    font-size : 28px;
+    font-family:  Impact, sans-serif;
+    font-weight : 550;
+}
+.video{
+    position : relative;
+    top : 400;
+    left : 140;
+}
+
+
+.rightcol{
+    width : 50%;
+    float : left;
+    height : 50%;
+}
+.lefttri{
+    width: 0;
+    height: 0;
+    margin-left : -35px;
+    margin-top : 110px;
+    border-top: 45px solid transparent;
+	border-right: 50px solid rgb(129, 64, 64);
+	border-bottom: 45px solid transparent;
+}
+img.beta{
+    position : relative;
+    top : 250;
+    left : 70;
+    width:82%;
+    height : 45%;
+}
+.rect1{
+    position : relative;
+    top : 100;
+    left : 90;
+    height : 320px;
+    width : 540px;
+    border : 1px solid black;
+    background-color : rgb(129, 64, 64);
+    transition-duration:0.3s;
+    opacity : 1;
+}
+.rect1:hover{
+    opacity : 0.85;
+}
+.video1{
+    position : relative;
+    top : 430;
+    left : 90;
+}
+
+

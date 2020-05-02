@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+   <title>DLHM shoes</title>
+
+   <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <link rel="stylesheet" href="./carts.css" />
+    <link rel="shortcut icon" type="image/png" href="image/running.png">
+   <style>
+   h2{
+      text-align: center;
+   }
+   *{
+      box-sizing: border-box;
+   }
+   .row{
+      display:-ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+   }
+
+   .col-25{
+       -ms-flex: 25%;
+       flex:25%;
+   }
+   .col-50{
+      -ms-flex:50%;
+      flex:50%;
+   }
+
+   .col-75{
+      -ms-flex:75%;
+      flex:75%;
+   }
+
+   .col-25,.col-50,.col-75{
+      padding:0 16px;
+   }
+
+   .container{
+      background-color: rgb(168, 219, 240);
+      padding: 5px 20px 15px 15px;
+     
+      border-radius: 3px;
+   }
+
+   input[type=text]{
+      width: 100%;
+      margin-bottom: 20px;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:30px;
+      display:inline-box;
+   }
+
+   label{
+      margin-bottom: 10px;
+      display: block;
+   }
+
+   .icon-container{
+      margin-bottom: 20px;
+      padding:7px 0;
+      font-size:24 px;
+   }
+
+   .btn{
+      background-color:rgb(14, 12, 12);
+      color:white;
+      padding:12px;
+      border:none;
+      width:100%;
+      border-radius:3px;
+      cursor:pointer;
+      font-size: 17px;
+     
+   }
+   .buy{
+   
+    margin-left: 700px;
+    margin-top:50px;
+    margin-bottom: 40px;
+    
+   }
+
+   
+    
+   .payment-images-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
+            display: flex;
+        }
+    
+
+   @media(max-witdh:800px){
+    .row{
+       flex-direction: column-reverse;
+
+    }
+    .col-25{
+       margin-bottom: 20px;
+    }
+
+   }
+   .modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width:100%; 
+  height:100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 200px;
+  }
+   
+  .modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; 
+  border: 1px solid #888;
+  width: 80%; 
+  }
+
+  .cart-button{
+      width: 250px;
+      height: 70px;
+      font-size: larger;
+      background-color: rgb(127, 139, 245);   
+      color: rgb(10, 10, 8);
+  }
+   </style>
+
+</head>
+
+<!--logo-->
+<img src="DLHM Shoes-logo.png" alt="DLHM Shoes Shop" width="1000" height="400">
+
+
+<body>
+   <header>
+      
+         </br>
+        
+            <nav>
+               <ul>
+                  <li><a href="assignment_txt.html">Home</a></li>
+                  <li>
+                     <div class="w3-container">
+                         <div class="dropdown">
+                             <span>Categories</span>
+                             <div class="dropdown-content">
+                                 <a href="MenShoes.html">Men</a>
+                                 <a href="womenShoes.html">Women</a>
+                                 <a href="kidShoes.html">Kid</a>
+                                 <a href="SportShoes.html">Sport</a>
+                             </div>
+                         </div>
+                     </div>
+                 </li>
+                  <li><a href="aboutus.html">ABOUT US </a></li>
+                  <li><a href="FAQ.html">FAQ </a></li>
+                  <li class="cart">
+                     <a href="cart_txt.html"><ion-icon name="basket"></ion-icon>Cart<span>0</span></a>
+                  </li>
+                  <li>
+                    <div class="w3-container">
+                       <div class="dropdown">
+                          <span>
+                             <ion-icon name="person-circle-outline"></ion-icon>
+                          </span>
+                          <div class="dropdown-content">
+                             <a href="login.html">Login</a>
+                             <a href="sign up.html">Sign Up</a>
+                          </div>
+                       </div>
+                    </div>
+                 </li>
+                 <li><div class="dropdownSearchBar">
+                  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                  <div id="myDropdown" class="dropdownSearchBar-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" >
+                    <a href="men Shoes/air max shoes.html">Air Max</a>
+                    <a href="men Shoes/air willwood shoes.html">Air Willwood</a>
+                    <a href="men Shoes/lebron shoes.html">Lebron</a>
+                    <a href="men Shoes/mar shoes.html">Mar</a>
+                    <a href="men Shoes/metcoon shoes.html">Metcoon</a>
+                    <a href="men Shoes/mx-720.html">MX-720</a>
+                    <a href="men Shoes/react phantom shoes.html">Reat Phantom</a>
+                    <a href="men Shoes/vapor max shoes.html">Vapor Max</a>
+            
+                    <a href="kid Shoes/academy.html">academy</a>
+                    <a href="kid Shoes/freak shoe.html">Freak</a>
+                    <a href="kid Shoes/max 90.html">Max 90</a>
+                    <a href="kid Shoes/mg 8 shoe.html">MG 8</a>
+                    <a href="kid Shoes/revolution shoe.html">revolution</a>
+                    <a href="kid Shoes/vapor.html">Vapor</a>
+            
+                    <a href="sport Shoes/epic shoe.html">Epic</a>
+                    <a href="sport Shoes/fly shoe.html">Fly</a>
+                    <a href="sport Shoes/gravity shoe.html">Gravity</a>
+                    <a href="sport Shoes/infinity shoe.html">Infinity</a>
+                    <a href="sport Shoes/joyride shoe.jpg">Joyride</a>
+                    <a href="sport Shoes/pegasus.html">Pegasus</a>
+                    <a href="sport Shoes/react shoe.html">React</a>
+                    <a href="sport Shoes/renew shoe.html">Renew</a>
+            
+                    <a href="women Shoes/aphina.html">Aphina</a>
+                    <a href="women Shoes/count blanc.html">Count Blanc</a>
+                    <a href="women Shoes/free.html">Free</a>
+                    <a href="women Shoes/legend.html">Legend</a>
+                    <a href="women Shoes/max 2090.html">Max 2090</a>
+                    <a href="women Shoes/verona.html">Verona</a>
+                    <a href="women Shoes/zoom.html">Zoom</a>
+                    <a href="women Shoes/air force.html">Air Force</a>
+                   
+                  </div>
+                </div>
+                <script src="searchBar.js"></script>
+               </li>
+               </ul>
+            </nav>
+     
+    
+   </header>
+  
+   <h6 style="font-size: 50px ;text-shadow: 2px 2px red ;text-align: center;">Welcome To Your Cart</h6>
+   <div class="products-container">
+      <div class="product-header">
+          <h3 class="product-title">Product</h3>
+          <h3 class="price">Price</h3>
+          <h3 class="quantity">Quantity</h3>
+          <h3 class="total">total</h3>
+       </div> 
+       <div class="products">
+           
+       </div>
+       
+   </div>
+   
+   <button class="btn buy" onclick="document.getElementById('purchase').style.display='block'"
+            style="width:auto;">Check out</button>
+
+   <div id="purchase" class="modal">
+      <form name="cart" class="modal-content animate" action="/action_page.php" method="post" onsubmit="validateForm()">
+         <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form action="/action_page.php">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Lye Jun Onn">
+
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="junonn@example.com">
+
+                                <label for="phone"><i class="fa fa-phone"></i>Phone</label>
+                                <input type="text" id="phone" name="phone" placeholder="012-3456789">
+
+                                <label for="address"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="address" name="address" placeholder="No.00,prima setapak">
+
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" id="city" name="city" placeholder="Setapak">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" placeholder="Kuala Lumpur">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">Postcode</label>
+                                        <input type="text" id="zip" name="zip" placeholder="12345">
+                                    </div>
+                                 </div>
+
+                                <div class="col-50">
+                                  <h3>Payment</h3>
+                                  <label for="fname">Accepted Cards</label>
+                                  <div class="payment-images-container">
+                                    <img src="./payment/visa.jpg" width= "40" height="25";>
+                                    <img src="./payment/mastercard.png" width= "40" height="25";>
+                                    <img src="./payment/jcb.jpg" width= "40" height="25";>
+                                 </div>
+                                 <label for="cardname">Name on Card</label>
+                                 <input type="text" id="cardname" name="cardname" placeholder="Lye Jun Onn">
+
+                                 <label for="cardnumber">Credit card number</label>
+                                 <input type="text" id="cardnumber" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expdate">Exp Date</label>
+                                        <input type="text" id="expdate" name="expdate" placeholder="MM/YY">
+                                        <button class="cart-button" type="button" onclick="validateForm()">Continue to checkout</button>
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="112">
+                                       
+                                     </div>
+                                </div>
+                            </div>
+                           </div>
+                           
+                        </div>     
+
+                        
+
+
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+      </form>
+   </div>
+   
+   <script>
+
+      var modal = document.getElementById('purchase');
+
+      window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+      
+        
+        function showMsg(clickedradio) {
+            var text = document.getElementById("text");
+            if (clickedradio.checked && clickedradio.value == '2') {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+
+        }
+
+       
+
+        function validateForm() {
+            var fname = document.forms["cart"]["firstname"].value;
+            var email = document.forms["cart"]["email"].value;
+            var phone = document.forms["cart"]["phone"].value;
+            var address = document.forms["cart"]["address"].value;
+            var city = document.forms["cart"]["city"].value;
+            var state = document.forms["cart"]["state"].value;
+            var zip = document.forms["cart"]["zip"].value;
+            var cardname = document.forms["cart"]["cardname"].value;
+            var cardnumber = document.forms["cart"]["cardnumber"].value;
+            var expdate = document.forms["cart"]["expdate"].value;
+            var cvv = document.forms["cart"]["cvv"].value;
+           
+
+            if (fname == "" || email == "" || phone == "" || address == "" || city == "" || state == "" || zip == "" || cardname == "" || exdate  == "" || cardnumber == "" || cvv == "" ) {
+                alert("Form must be full filled");
+                return false;
+            }
+            else {
+                alert("You purchase successful");
+            }
+        }
+
+  
+
+
+
+
+
+   </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+   <script src="cart.js"> </script>
+   
+</body>
+
+<!-- footer -->
+<footer>
+   <center>
+      <h4> Follow Us to get more information</h4>
+      <div class="social">
+         <a href="https://www.facebook.com/AirJordanShoesOfficial/"><img src="sc_facebook.png" width="30" height="30"
+               alt="facebook" /> </a>
+         <a href="https://www.instagram.com/everythiingnike/?hl=en"><img src="sc_instagram.png" width="30" height="30"
+               alt="instagram" /> </a>
+         <a href="https://twitter.com/Jumpman23?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+               src="sc_twitter.png" width="30" height="30" alt="twitter" /></a>
+      </div>
+      <h4>Contact: DLHMShoes@gmail.com</h4>
+   </center>
+   <div class="footer-bottom">
+      <h4 style="text-align: left; margin-left: 360px; font-family: 'Trebuchet MS', 
+         'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+         &#169; 2020 DLHM Malaysia. All Rights Reserved
+      </h4>
+   </div>
+</footer>
+</html>
