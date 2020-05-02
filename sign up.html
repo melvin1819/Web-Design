@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <img src="DLHM Shoes-logo.png" alt="DLHM Shoes Shop" width="1000" height="400">
+    <link rel="shortcut icon" type="image/png" href="image/running.png">
+    <link rel="shortcut icon" type="image/png" href="image/running.png">
+    <link rel="stylesheet" href="assignment_txt.css">
+
+    <center>
+        <nav>
+            <ul>
+                <li><a href="assignment_txt.html">Menu</a></li>
+                <li>
+                    <div class="w3-container">
+                        <div class="dropdown">
+                            <span>Categories</span>
+                            <div class="dropdown-content">
+                                <a href="MenShoes.html">Men</a>
+                                <a href="womenShoes.html">Women</a>
+                                <a href="kidShoes.html">Kid</a>
+                                <a href="SportShoes.html">Sport</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="aboutus.html">ABOUT US </a></li>
+                <li><a href="FAQ.html">FAQ </a></li>
+                <li class="cart">
+                    <a href="cart_txt.html">
+                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="w3-container">
+                        <div class="dropdown">
+                            <span>
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <div class="dropdown-content">
+                                <a href="login.html">Login</a>
+                                <a href="sign up.html">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdownSearchBar">
+                        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                        <div id="myDropdown" class="dropdownSearchBar-content">
+                            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                            <a href="men Shoes/air max shoes.html">Air Max</a>
+                            <a href="men Shoes/air willwood shoes.html">Air Willwood</a>
+                            <a href="men Shoes/lebron shoes.html">Lebron</a>
+                            <a href="men Shoes/mar shoes.html">Mar</a>
+                            <a href="men Shoes/metcoon shoes.html">Metcoon</a>
+                            <a href="men Shoes/mx-720.html">MX-720</a>
+                            <a href="men Shoes/react phantom shoes.html">Reat Phantom</a>
+                            <a href="men Shoes/vapor max shoes.html">Vapor Max</a>
+
+                            <a href="kid Shoes/academy.html">academy</a>
+                            <a href="kid Shoes/freak shoe.html">Freak</a>
+                            <a href="kid Shoes/max 90.html">Max 90</a>
+                            <a href="kid Shoes/mg 8 shoe.html">MG 8</a>
+                            <a href="kid Shoes/revolution shoe.html">revolution</a>
+                            <a href="kid Shoes/vapor.html">Vapor</a>
+
+                            <a href="sport Shoes/epic shoe.html">Epic</a>
+                            <a href="sport Shoes/fly shoe.html">Fly</a>
+                            <a href="sport Shoes/gravity shoe.html">Gravity</a>
+                            <a href="sport Shoes/infinity shoe.html">Infinity</a>
+                            <a href="sport Shoes/joyride shoe.jpg">Joyride</a>
+                            <a href="sport Shoes/pegasus.html">Pegasus</a>
+                            <a href="sport Shoes/react shoe.html">React</a>
+                            <a href="sport Shoes/renew shoe.html">Renew</a>
+
+                            <a href="women Shoes/aphina.html">Aphina</a>
+                            <a href="women Shoes/count blanc.html">Count Blanc</a>
+                            <a href="women Shoes/free.html">Free</a>
+                            <a href="women Shoes/legend.html">Legend</a>
+                            <a href="women Shoes/max 2090.html">Max 2090</a>
+                            <a href="women Shoes/verona.html">Verona</a>
+                            <a href="women Shoes/zoom.html">Zoom</a>
+                            <a href="women Shoes/air force.html">Air Force</a>
+
+                        </div>
+                    </div>
+                    <script src="searchBar.js"></script>
+                </li>
+            </ul>
+        </nav>
+    </center>
+
+</head>
+
+<style>
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+    }
+
+    .cancelbtn,
+    .signupbtn {
+        float: left;
+        width: 50%;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<body>
+
+    <form action="" name="catering">
+        <!----------------------link to where------------------------->
+        <label for="fname"> Full
+            Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="fname" name="firstname" placeholder="John">
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" placeholder="Cina" name="lastname"><br />
+        <label for="email">Enter your email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" id="email" name="email" placeholder="johncina@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br />
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="011-1111111" pattern="[0-9]{3}-[0-9]{7-8}"
+            required><br />
+        <label
+            for="date">Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="date" id="date" name="date">
+        <label for="appt">Select a time:</label>
+        <label
+            for="comments">Comments:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <textarea id="comments" name="comments" placeholder="Example : Inquire details, tools, etc."
+            style="height:200px;width: 500px;"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    <br />
+
+    <!-- validation of signup -->
+    <script>
+
+        function validateForm() {
+            var x = document.forms["catering"]["firstname"].value;
+            var y = document.forms["catering"]["lastname"].value;
+            var z = document.forms["catering"]["email"].value;
+            var q = document.forms["catering"]["phone"].value;
+            var w = document.forms["catering"]["date"].value;
+
+            if (x == "") {
+                alert("First name must be filled out");
+                return false;
+            }
+            if (y == "") {
+                alert("last name must be filled out");
+                return false;
+            }
+            if (z == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (q == "") {
+                alert("Phone number must be filled out");
+                return false;
+            }
+            if (w == "") {
+                alert("Date must be filled out");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+<footer>
+    <center>
+        <div class="social">
+            <a href="https://www.facebook.com/AirJordanShoesOfficial/"><img src="sc_facebook.png" width="30" height="30"
+                    alt="facebook" /> </a>
+            <a href="https://www.instagram.com/everythiingnike/?hl=en"><img src="sc_instagram.png" width="30"
+                    height="30" alt="instagram" /> </a>
+            <a href="https://twitter.com/Jumpman23?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                    src="sc_twitter.png" width="30" height="30" alt="twitter" /></a>
+        </div>
+        <h4 style="color: white;"> Follow Us to get more information</h4>
+        <h4 style="color: white;">Contact: DLHMShoes@gmail.com</h4>
+    </center>
+    <div class="footer-bottom" style="color: white;">
+        <h4 style="text-align: left; margin-left: 360px; font-family: 'Trebuchet MS', 
+           'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            &#169; 2020 DLHM Malaysia. All Rights Reserved
+        </h4>
+    </div>
+</footer>
+
+</html>
