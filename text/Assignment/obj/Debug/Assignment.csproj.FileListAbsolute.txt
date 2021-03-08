@@ -1,0 +1,11 @@
+C:\Users\hp\Desktop\Assignment\Assignment\bin\Debug\Assignment.exe.config
+C:\Users\hp\Desktop\Assignment\Assignment\bin\Debug\Assignment.exe
+C:\Users\hp\Desktop\Assignment\Assignment\bin\Debug\Assignment.pdb
+C:\Users\hp\Desktop\Assignment\Assignment\obj\Debug\Assignment.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\Assignment\Assignment\obj\Debug\Assignment.Register.resources
+C:\Users\hp\Desktop\Assignment\Assignment\obj\Debug\Assignment.Login.resources
+C:\Users\hp\Desktop\Assignment\Assignment\obj\Debug\Assignment.Properties.Resources.resources
+C:\Users\hp\Desktop\Assignment\Assignment\obj\Debug\Assignment.csproj.GenerateResource.cache
+C:\Users\hp\Desktop\Assignment\Assignment\obj\Debug\Assignment.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Assignment\Assignment\obj\Debug\Assignment.exe
+C:\Users\hp\Desktop\Assignment\Assignment\obj\Debug\Assignment.pdb
